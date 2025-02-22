@@ -21,5 +21,5 @@ export class AppComponent implements OnInit {
   
   
 
-  title = 'stinkyprojectclient';
+  title = 'projectclient';
 }

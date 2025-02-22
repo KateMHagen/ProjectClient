@@ -32,5 +32,5 @@ public forecasts: WeatherForecast[] = [];
     );
   }
 
-  title = 'stinkyprojectclient';
+  title = 'projectclient';
 }
