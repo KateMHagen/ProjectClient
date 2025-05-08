@@ -13,9 +13,7 @@ import { WeatherForecast } from "../weather-forecast";
 export class WeatherComponent implements OnInit {
 public forecasts: WeatherForecast[] = [];
 
-  constructor(private http: HttpClient) {
-
-  }
+  constructor(private http: HttpClient) {}
 
   ngOnInit() {
     this.getForecasts();
@@ -25,9 +23,7 @@ public forecasts: WeatherForecast[] = [];
     this.http.get<WeatherForecast[]>(`${environment.baseUrl}weatherforecast`).subscribe({
       next: result => this.forecasts = result,
       error: error => console.error(error)
-    }
-     
-    );
+    });
   }
 
   title = 'projectclient';
